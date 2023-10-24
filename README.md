@@ -1,1 +1,2 @@
-# coding-games
+# Some coding exercises
+
