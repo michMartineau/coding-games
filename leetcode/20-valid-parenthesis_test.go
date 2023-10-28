@@ -9,6 +9,7 @@ func TestIsValid(t *testing.T) {
 	}{
 		{"", false},
 		{"[]", true},
+		{"[}]", false},
 	}
 
 	for _, tt := range tests {
