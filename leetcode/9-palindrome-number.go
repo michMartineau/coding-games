@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func reversedNum(x int) int {
 	var reversedNum int
 	for x > 0 {
@@ -27,9 +25,4 @@ func isPalindrome(x int) bool {
 		return false
 	}
 	return reversedNum(x) == x
-}
-
-func main() {
-	fmt.Println(isPalindrome(121))
-	fmt.Println(isPalindrome(122))
 }
