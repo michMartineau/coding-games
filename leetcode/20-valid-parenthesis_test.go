@@ -4,8 +4,8 @@ import "testing"
 
 func TestIsValid(t *testing.T) {
 	var tests = []struct {
-		chain    string
-		expected bool
+		input  string
+		output bool
 	}{
 		{"", false},
 		{"[]", true},
@@ -13,9 +13,9 @@ func TestIsValid(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		valid := isValid(tt.chain)
-		if valid != tt.expected {
-			t.Errorf("for %s not valid %t is expected", tt.chain, tt.expected)
+		valid := isValid(tt.input)
+		if valid != tt.output {
+			t.Errorf("for %s not valid %t is expected", tt.input, tt.output)
 		}
 
 	}
