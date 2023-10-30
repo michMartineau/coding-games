@@ -31,7 +31,6 @@ func TestRemoveDuplicate(t *testing.T) {
 		if valid != tt.output {
 			t.Errorf("for %d not valid %d is expected", tt.input, tt.output)
 		}
-
 	}
 
 }
