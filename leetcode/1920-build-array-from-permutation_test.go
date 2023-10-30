@@ -5,6 +5,14 @@ import (
 	"testing"
 )
 
+func buildArray(nums []int) []int {
+	ans := make([]int, len(nums))
+	for i, n := range nums {
+		ans[i] = nums[n]
+	}
+	return ans
+}
+
 func TestBuildArray(t *testing.T) {
 	var tests = []struct {
 		input  []int

@@ -5,6 +5,20 @@ import (
 	"testing"
 )
 
+func twoSum(nums []int, target int) []int {
+	res := make([]int, 2)
+	for i, v := range nums {
+
+		for j := i + 1; j < len(nums); j++ {
+			if v+nums[j] == target {
+				res[0] = i
+				res[1] = j
+				break
+			}
+		}
+	}
+	return res
+}
 func TestTwoSum(t *testing.T) {
 	var tests = []struct {
 		input1 []int
